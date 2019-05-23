@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Boogaloo&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='style.css'>
+</head>
+
+<body>
+
+
+    <div class="slideshow-container">
+
+
+        <div class="slide delay">
+            <div class="number"><span class="number_color">1</span>/3</div>
+            <img src="img/img1.jpg" />
+            <div class="text">Text 1</div>
+        </div>
+
+        <div class="slide delay">
+            <div class="number"><span class="number_color">2</span>/3</div>
+            <img src="img/img2.jpg" />
+            <div class="text">Text 2</div>
+        </div>
+
+        <div class="slide delay">
+            <div class="number"><span class="number_color">3</span>/3</div>
+            <img src="img/img3.jpg" />
+            <div class="text">Text 3</div>
+        </div>
+
+        <a class="arrow prev" onclick="plusSlide(-1)">&#10094;</a>
+        <a class="arrow next" onclick="plusSlide(1)">&#10095;</a>
+    </div>
+
+    <div class="nav">
+        <span class="select" onclick="currentSlide(1)"></span>
+        <span class="select" onclick="currentSlide(2)"></span>
+        <span class="select" onclick="currentSlide(3)"></span>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
