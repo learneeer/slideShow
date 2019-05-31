@@ -19,35 +19,13 @@ body {
         text-align: center;
         .slide {
             display: none;
-            .number {
-                color: $text_color;
-                text-shadow: $shadow;
-                font-size: 27px;
-                padding: 8px 12px;
-                position: absolute;
-                top: 0;
-                left: 20px;
-                .number_color {
-                    color: $color_active;
-                }
+            &.delay {
+                animation-name: delay;
+                animation-duration: 1.5s;
             }
             img {
                 height: 100vh;
             }
-            .text {
-                color: $text_color;
-                font-size: 27px;
-                padding: 8px 12px;
-                position: absolute;
-                bottom: 35px;
-                width: 100%;
-                text-align: center;
-                text-shadow: $shadow;
-            }
-        }
-        .delay {
-            animation-name: delay;
-            animation-duration: 1.5s;
         }
         .arrow {
             cursor: pointer;
@@ -64,13 +42,13 @@ body {
             &:hover {
                 background-color: rgba(131, 118, 118, 0.8);
             }
-        }
-        .prev {
-            left: 0;
-        }
-        .next {
-            right: 1%;
-            border-radius: 3px 0 0 3px;
+            &.prev {
+                left: 0;
+            }
+            &.next {
+                right: 1%;
+                border-radius: 3px 0 0 3px;
+            }
         }
     }
     .nav {
